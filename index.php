@@ -7,5 +7,5 @@ $pdo->exec("INSERT INTO itens(nome) VALUES ('".$_POST['name']."')");
 
 $id = $pdo->lastInsertId();
 
-echo json_encode(["id" => $id, 'name'=> $_POST['name']]);
+echo json_encode(["id" => $id, 'nome'=> $_POST['name']]);
 ?>

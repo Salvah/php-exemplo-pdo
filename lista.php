@@ -7,6 +7,7 @@ $stm = $pdo->query("SELECT * FROM itens");
 
 $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
 
+
 echo json_encode($rows);
 
 ?>
